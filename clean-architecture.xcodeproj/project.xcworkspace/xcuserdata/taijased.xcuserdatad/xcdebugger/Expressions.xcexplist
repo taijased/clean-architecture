@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "APICall.urlRequest(baseURL:):APICall.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "baseURL + path">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in Networking.createDataTask&lt;&#x3c4;_0_0&gt;(httpCodes:from:completion:):Networking.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(response as? HTTPURLResponse)?.statusCode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Networking.call&lt;&#x3c4;_0_0&gt;(endpoint:httpCodes:completion:):Networking.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "baseURL">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

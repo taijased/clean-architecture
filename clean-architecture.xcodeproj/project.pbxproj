@@ -7,23 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A0B58362741CB5E00C77EFB /* AppleMusic in Frameworks */ = {isa = PBXBuildFile; productRef = 8A0B58352741CB5E00C77EFB /* AppleMusic */; };
+		8A9AA3CE2742255500A03A4F /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9AA3CD2742255500A03A4F /* RootCoordinator.swift */; };
 		8AC51FF827419080003832B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC51FF727419080003832B8 /* AppDelegate.swift */; };
-		8AC51FFA27419080003832B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC51FF927419080003832B8 /* SceneDelegate.swift */; };
-		8AC51FFC27419080003832B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC51FFB27419080003832B8 /* ViewController.swift */; };
-		8AC51FFF27419080003832B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC51FFD27419080003832B8 /* Main.storyboard */; };
 		8AC5200127419082003832B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5200027419082003832B8 /* Assets.xcassets */; };
 		8AC5200427419082003832B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC5200227419082003832B8 /* LaunchScreen.storyboard */; };
+		8AC5201027419656003832B8 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 8AC5200F27419656003832B8 /* Core */; };
+		8AC5201227419D81003832B8 /* Application in Frameworks */ = {isa = PBXBuildFile; productRef = 8AC5201127419D81003832B8 /* Application */; };
+		8AC5201427419D81003832B8 /* Infrastructure in Frameworks */ = {isa = PBXBuildFile; productRef = 8AC5201327419D81003832B8 /* Infrastructure */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A9AA3CD2742255500A03A4F /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		8AC51FF427419080003832B8 /* clean-architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "clean-architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC51FF727419080003832B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8AC51FF927419080003832B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8AC51FFB27419080003832B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8AC51FFE27419080003832B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AC5200027419082003832B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AC5200327419082003832B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AC5200527419082003832B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AC5200D274193C1003832B8 /* Development Packages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Development Packages"; path = "Packages/Development Packages"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AC5201027419656003832B8 /* Core in Frameworks */,
+				8A0B58362741CB5E00C77EFB /* AppleMusic in Frameworks */,
+				8AC5201427419D81003832B8 /* Infrastructure in Frameworks */,
+				8AC5201227419D81003832B8 /* Application in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +45,10 @@
 		8AC51FEB2741907F003832B8 = {
 			isa = PBXGroup;
 			children = (
+				8AC5200C274193C1003832B8 /* Packages */,
 				8AC51FF627419080003832B8 /* clean-architecture */,
 				8AC51FF527419080003832B8 /* Products */,
+				8AC5200E27419656003832B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +64,35 @@
 			isa = PBXGroup;
 			children = (
 				8AC51FF727419080003832B8 /* AppDelegate.swift */,
-				8AC51FF927419080003832B8 /* SceneDelegate.swift */,
-				8AC51FFB27419080003832B8 /* ViewController.swift */,
-				8AC51FFD27419080003832B8 /* Main.storyboard */,
+				8A9AA3CD2742255500A03A4F /* RootCoordinator.swift */,
+				8AC5200B274190B4003832B8 /* Sources */,
+			);
+			path = "clean-architecture";
+			sourceTree = "<group>";
+		};
+		8AC5200B274190B4003832B8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
 				8AC5200027419082003832B8 /* Assets.xcassets */,
 				8AC5200227419082003832B8 /* LaunchScreen.storyboard */,
 				8AC5200527419082003832B8 /* Info.plist */,
 			);
-			path = "clean-architecture";
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8AC5200C274193C1003832B8 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				8AC5200D274193C1003832B8 /* Development Packages */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		8AC5200E27419656003832B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +111,12 @@
 			dependencies = (
 			);
 			name = "clean-architecture";
+			packageProductDependencies = (
+				8AC5200F27419656003832B8 /* Core */,
+				8AC5201127419D81003832B8 /* Application */,
+				8AC5201327419D81003832B8 /* Infrastructure */,
+				8A0B58352741CB5E00C77EFB /* AppleMusic */,
+			);
 			productName = "clean-architecture";
 			productReference = 8AC51FF427419080003832B8 /* clean-architecture.app */;
 			productType = "com.apple.product-type.application";
@@ -127,7 +161,6 @@
 			files = (
 				8AC5200427419082003832B8 /* LaunchScreen.storyboard in Resources */,
 				8AC5200127419082003832B8 /* Assets.xcassets in Resources */,
-				8AC51FFF27419080003832B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AC51FFC27419080003832B8 /* ViewController.swift in Sources */,
+				8A9AA3CE2742255500A03A4F /* RootCoordinator.swift in Sources */,
 				8AC51FF827419080003832B8 /* AppDelegate.swift in Sources */,
-				8AC51FFA27419080003832B8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8AC51FFD27419080003832B8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8AC51FFE27419080003832B8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8AC5200227419082003832B8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,12 +315,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C8F3CLJ592;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "clean-architecture/Info.plist";
+				INFOPLIST_FILE = "clean-architecture/Sources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,12 +344,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C8F3CLJ592;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "clean-architecture/Info.plist";
+				INFOPLIST_FILE = "clean-architecture/Sources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,6 +386,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A0B58352741CB5E00C77EFB /* AppleMusic */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppleMusic;
+		};
+		8AC5200F27419656003832B8 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+		8AC5201127419D81003832B8 /* Application */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Application;
+		};
+		8AC5201327419D81003832B8 /* Infrastructure */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Infrastructure;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8AC51FEC2741907F003832B8 /* Project object */;
 }
