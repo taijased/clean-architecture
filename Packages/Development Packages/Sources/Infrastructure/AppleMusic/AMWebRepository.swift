@@ -9,7 +9,7 @@ import Foundation
 import Core
 import Network
 
-public final class AMWebRepository: Networking, AMWebRepositoryInterface {
+public final class AMWebRepository: INetworking, IAMWebRepository {
     // MARK: - Properties
     
     public lazy var session: URLSession = {

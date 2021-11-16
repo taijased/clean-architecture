@@ -8,7 +8,7 @@
 import UIKit
 import Swinject
 
-public protocol SystemEventsHandlerInterface {
+public protocol ISystemEventsHandler {
     //MARK: - Functions
     
     func openURLContexts(_ url: URL)
@@ -19,21 +19,21 @@ public protocol SystemEventsHandlerInterface {
     )
 }
 
-public struct SystemEventsHandler: SystemEventsHandlerInterface {
+public struct SystemEventsHandler: ISystemEventsHandler {
     //MARK: - Properties
     
     private let container: Container
     
-    private let deepLinksHandler: DeepLinksHandlerInterface
+    private let deepLinksHandler: IDeepLinksHandler
     
-    private let pushNotificationsHandler: PushNotificationsHandlerInterface
+    private let pushNotificationsHandler: IPushNotificationsHandler
     
     //MARK: - Initializer
     
     public init(
         container: Container,
-        deepLinksHandler: DeepLinksHandlerInterface,
-        pushNotificationsHandler: PushNotificationsHandlerInterface
+        deepLinksHandler: IDeepLinksHandler,
+        pushNotificationsHandler: IPushNotificationsHandler
     ) {
         self.container = container
         self.deepLinksHandler = deepLinksHandler

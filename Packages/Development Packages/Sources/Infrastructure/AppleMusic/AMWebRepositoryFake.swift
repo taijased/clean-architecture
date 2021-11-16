@@ -8,7 +8,7 @@
 import Foundation
 import Core
 
-public final class AMWebRepositoryFake: AMWebRepositoryInterface {
+public final class AMWebRepositoryFake: IAMWebRepository {
     // MARK: - Initializer
     
     public init() {}

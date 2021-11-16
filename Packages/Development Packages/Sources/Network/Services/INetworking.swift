@@ -1,5 +1,5 @@
 //
-//  Networking.swift
+//  INetworking.swift
 //  
 //
 //  Created by Maxim Spiridonov on 15.11.2021.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol Networking {
+public protocol INetworking {
     // MARK: - Properties
     
     var session: URLSession { get }
@@ -15,7 +15,7 @@ public protocol Networking {
     var baseURL: String { get }
 }
 
-extension Networking {
+extension INetworking {
     // MARK: - Functions
     
     public func call<T: Decodable>(

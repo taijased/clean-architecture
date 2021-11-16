@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol PushNotificationsHandlerInterface {
+public protocol IPushNotificationsHandler {
     //MARK: - Functions
     
     func requestAutorization()
@@ -15,7 +15,7 @@ public protocol PushNotificationsHandlerInterface {
     func scheduleNotification(identifier: String)
 }
 
-public final class PushNotificationsHandler: NSObject, PushNotificationsHandlerInterface {
+public final class PushNotificationsHandler: NSObject, IPushNotificationsHandler {
     //MARK: - Properties
     
     public let notificationCenter = UNUserNotificationCenter.current()

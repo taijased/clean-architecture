@@ -8,13 +8,13 @@
 import Foundation
 import Swinject
 
-public protocol DeepLinksHandlerInterface {
+public protocol IDeepLinksHandler {
     //MARK: - Functions
     
     func open(deepLink: DeepLink)
 }
 
-public struct DeepLinksHandler: DeepLinksHandlerInterface {
+public struct DeepLinksHandler: IDeepLinksHandler {
     //MARK: - Properties
     
     private let container: Container

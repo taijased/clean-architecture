@@ -11,11 +11,11 @@ import Core
 public final class AppleMusicFacade {
     // MARK: - Properties
     
-    private let webRepository: AMWebRepositoryInterface
+    private let webRepository: IAMWebRepository
     
     // MARK: - Initializer
         
-    public init(webRepository: AMWebRepositoryInterface) {
+    public init(webRepository: IAMWebRepository) {
         self.webRepository = webRepository
     }
     
