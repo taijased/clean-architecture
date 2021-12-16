@@ -3,10 +3,21 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "APICall.urlRequest(baseURL:):APICall.swift">
+         contextName = "CacheStack.().init():CacheStack.swift">
          <PersistentStrings>
             <PersistentString
-               value = "baseURL + path">
+               value = "Bundle(for: CacheStack.self)">
+            </PersistentString>
+            <PersistentString
+               value = "modelPath">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppleMusic.toManagedObject(in:):AppleMusic+Cacheable.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "AppleMusicMO.entityName">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -15,6 +26,14 @@
          <PersistentStrings>
             <PersistentString
                value = "(response as? HTTPURLResponse)?.statusCode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "APICall.urlRequest(baseURL:):APICall.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "baseURL + path">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

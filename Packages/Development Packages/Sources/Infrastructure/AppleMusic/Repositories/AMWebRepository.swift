@@ -1,6 +1,6 @@
 //
 //  AMWebRepository.swift
-//  
+//
 //
 //  Created by Maxim Spiridonov on 14.11.2021.
 //
@@ -56,7 +56,6 @@ public final class AMWebRepository: INetworking, IAMWebRepository {
         )
     }
 }
-
 
 extension AMWebRepository {
     public enum API {

@@ -39,7 +39,11 @@ public struct AppEnvironment {
     private static func configuredProduction(by container: Container) {
         container.register(AppleMusicFacade.self) { r in
             let webRepository = AMWebRepository()
-            let facade = AppleMusicFacade(webRepository: webRepository)
+            let cache = AMCacheRepository()
+            let facade = AppleMusicFacade(
+                webRepository: webRepository,
+                cache: cache
+            )
             return facade
         }
     }
@@ -47,7 +51,11 @@ public struct AppEnvironment {
     private static func configuredDevelopment(by container: Container) {
         container.register(AppleMusicFacade.self) { r in
             let webRepository = AMWebRepositoryFake()
-            let facade = AppleMusicFacade(webRepository: webRepository)
+            let cache = AMCacheRepositoryFake()
+            let facade = AppleMusicFacade(
+                webRepository: webRepository,
+                cache: cache
+            )
             return facade
         }
     }

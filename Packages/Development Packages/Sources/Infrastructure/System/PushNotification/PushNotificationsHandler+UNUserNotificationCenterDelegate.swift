@@ -16,7 +16,12 @@ extension PushNotificationsHandler: UNUserNotificationCenterDelegate {
         withCompletionHandler completionHandler:
         @escaping (UNNotificationPresentationOptions) -> Void
     ) {
-        completionHandler([.list, .sound])
+        if #available(iOS 14.0, *) {
+            completionHandler([.list, .sound])
+        } else {
+            // Fallback on earlier versions
+            completionHandler(UNNotificationPresentationOptions.init(rawValue: 1))
+        }
     }
     
     public func userNotificationCenter(
